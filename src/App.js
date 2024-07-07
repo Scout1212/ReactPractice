@@ -10,7 +10,7 @@ function App() {
         {/*<Greet></Greet>*/}
         {/*<Welcome></Welcome>*/}
         {/*<Hello></Hello>*/}
-        <Greet name = "Bruce" heroName = "Batman"></Greet>
+        <Greet name = "Bruce" heroName = "Gizmo"></Greet>
         <Greet name = "Clark" heroName = "Superman"></Greet>
         <Greet name = "Diana" heroName = "Wonder Woman"></Greet>
 
