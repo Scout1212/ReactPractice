@@ -4,6 +4,12 @@ import Greet from './Components/Greet'
 import Welcome from './Components/Welcome'
 import Hello from './Components/Hello'
 import Message from "./Components/Message";
+import Counter from "./Components/Counter"
+import Goodbye from "./Components/Goodbye"
+import FunctionClick from "./Components/FunctionClick";
+import ClassClick from "./Components/ClassClick";
+import ClassroomClick from "./Components/ClassroomClick"
+import EventBind from "./Components/EventBind"
 
 function App() {
   return (
@@ -27,10 +33,15 @@ function App() {
         </Welcome>
         <Welcome name = "Diana" heroName = "Wonder Woman"></Welcome>
         */}
-        <Message>
+        {/*<Message>
             <button>Click</button>
-        </Message>
-
+        </Message>*/}
+        {/*<Counter/>*/}
+        {/*<Goodbye name = "Twomad"></Goodbye>*/}
+        {/*<FunctionClick></FunctionClick>*/}
+        {/*<ClassClick></ClassClick>*/}
+        {/*<ClassroomClick></ClassroomClick>*/}
+        <EventBind></EventBind>
     </div>
   );
 }
