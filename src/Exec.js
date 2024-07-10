@@ -1,14 +1,13 @@
 import React from 'react';
 import Toggle from './Components/Toggle';
-import Header from './Components/Header';
 import TopNav from './Components/TopNav';
 
 function Exec(){
+    //todo figure out how to pass the toggle boolean from toggle into topNav
     return(
-
         <div>
-            <TopNav/>
             <Toggle/>
+            <TopNav button = Toggle.GetToggle()/>
         </div>
     )
 }

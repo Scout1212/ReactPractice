@@ -7,8 +7,12 @@ class Toggle extends Component{
 
         this.state = {
             message : 'hello',
-            hello : true
+            toggle : true
         }
+    }
+
+    GetToggle(){
+        return this.state.toggle;
     }
 
     render() {
@@ -21,15 +25,15 @@ class Toggle extends Component{
     }
 
     changeMessage() {
-        if (this.state.hello) {
+        if(this.state.toggle) {
             this.setState({
                 message: 'Goodbye',
-                hello: false
+                toggle: false
             })
         } else {
             this.setState({
                 message: 'Hello',
-                hello: true
+                toggle: true
             })
         }
     }

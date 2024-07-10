@@ -8,8 +8,13 @@
 
 .Button{
     background-color: beige;
+    display: flex;
+    justify-content: center;
 }
 
 .Message{
-    color : bisque;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    color : black;
 }
