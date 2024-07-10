@@ -1,12 +1,13 @@
 import React from 'react';
 import Toggle from './Components/Toggle';
 import Header from './Components/Header';
+import TopNav from './Components/TopNav';
 
 function Exec(){
     return(
 
         <div>
-            <Header/>
+            <TopNav/>
             <Toggle/>
         </div>
     )
