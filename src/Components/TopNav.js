@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './TopNav.css';
 
-function TopNav(Props){
-    if(Props.button){
-        return (
-            <div class="NavContainerBox">
-                <li className='NavBullet'>
+class TopNav extends Component{
+    constructor(props) {
+        super(props)
+        this.state = {
+            hidden: false
+        }
+        this.update = this.update.bind(this);
+    }
+
+    update(){
+        this.setState({
+            hidden: !this.state.hidden
+        })
+    }
+
+    render(){
+        if(this.state.hidden){
+            return(
+                <div className="NavContainerBox">
                     <div className='ItemContainer'>
                         <div className="Item">
                             <h3>Home</h3>
@@ -14,17 +28,20 @@ function TopNav(Props){
                             <h3>Welcome</h3>
                         </div>
                         <div className="Item">
-                            <h3>Learn More</h3>
+                            <h3>Learn</h3>
                         </div>
+                        <button className="NavButton" onClick = {() => this.update()}>Click me</button>
                     </div>
-                </li>
-            </div>
-        )
-    }
-    else{
-        return(
-            <div class = "Closed"/>
-        )
+                </div>
+            );
+        }
+        else{
+            return (
+                <div ClassName="Shrunk">
+                        <button className="NavButton" onClick={this.update}> Click me</button>
+                </div>
+            );
+        }
     }
 }
 

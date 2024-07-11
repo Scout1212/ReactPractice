@@ -6,8 +6,7 @@ function Exec(){
     //todo figure out how to pass the toggle boolean from toggle into topNav
     return(
         <div>
-            <Toggle/>
-            <TopNav button = Toggle.GetToggle()/>
+            <TopNav/>
         </div>
     )
 }

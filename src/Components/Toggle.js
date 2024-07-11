@@ -5,14 +5,10 @@ class Toggle extends Component{
     constructor(props){
         super(props)
 
-        this.state = {
+        this.state ={
             message : 'hello',
             toggle : true
         }
-    }
-
-    GetToggle(){
-        return this.state.toggle;
     }
 
     render() {

@@ -1,28 +1,39 @@
 .NavContainerBox{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-self: start;
     background-color: black;
-    margin: 0;
-
-    color: bisque;
-    justify-content:  space-evenly;
+    width: 100%;
+    height: 50px;
 }
 
 .ItemContainer{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
 }
 
 .Item{
     width: 100px;
-    height: 100px;
-    background-color: darkslategray;
+    height: 50px;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    background: bisque;
 }
 
-.Closed{
-    width: 100vh;
-    height: 20px;
+.Shrunk{
+    display:flex;
+    flex-direction: row;
+    align-self: start;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+}
+
+.NavButton{
+    display: flex;
+    width: 100px;
+    height:50px;
+    align-self: flex-end;
+
 }
