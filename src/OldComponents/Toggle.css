@@ -1,0 +1,20 @@
+.Super{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Button{
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+}
+
+.Message{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    color : black;
+}

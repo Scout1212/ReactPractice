@@ -5,9 +5,9 @@ class Toggle extends Component{
     constructor(props){
         super(props)
 
-        this.state = {
+        this.state ={
             message : 'hello',
-            hello : true
+            toggle : true
         }
     }
 
@@ -21,15 +21,15 @@ class Toggle extends Component{
     }
 
     changeMessage() {
-        if (this.state.hello) {
+        if(this.state.toggle) {
             this.setState({
                 message: 'Goodbye',
-                hello: false
+                toggle: false
             })
         } else {
             this.setState({
                 message: 'Hello',
-                hello: true
+                toggle: true
             })
         }
     }
